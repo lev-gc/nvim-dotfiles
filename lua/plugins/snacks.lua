@@ -2,15 +2,16 @@ return {
   "folke/snacks.nvim",
   opts = {
     picker = {
-      -- show or hide dotfiles. toggle by "alt+h"
-      hidden = true,
-      -- show or hide files in .gitignore. toggle by "alt+i"
-      ignored = false,
+      hidden = true, -- show or hide dotfiles. toggle by "alt+h"
+      ignored = false, -- show or hide files in .gitignore. toggle by "alt+i"
       sources = {
         -- source "files" must be explicitly set.
         files = {
           hidden = true,
           ignored = false,
+        },
+        grep = {
+          regex = false, -- search by regex or literal. toggle by "alt+r"
         },
       },
     },
